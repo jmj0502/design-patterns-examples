@@ -53,7 +53,7 @@ class BinarySearchTree {
       if (node.right !== undefined) {
         traverse(node.right);
       }
-    }
+    };
     traverse(this.root);
 
     for (let i = 0; i < values.length; i++) {
@@ -113,7 +113,7 @@ while (bstIterator.hasNext()) {
   console.log(bstIterator.next());
 }
 
-console.log("Generator based iterator")
+console.log("Generator based iterator");
 for (const value of bst.depthFirstPreOrderTraversal()) {
-	console.log(value);
+  console.log(value);
 }
